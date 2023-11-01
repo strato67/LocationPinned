@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".FirstFragment">
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/search_hint"
+        app:layout_anchor="@id/search_bar_first"
+        app:layout_constraintBottom_toBottomOf="@+id/search_bar_first">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Search suggestions/results go here (ScrollView, RecyclerView, etc.). -->
+    </com.google.android.material.search.SearchView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.search.SearchBar
+                android:id="@+id/search_bar_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/search_hint" />
+
+            <Button
+                android:id="@+id/reload_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:paddingVertical="8dp"
+                android:text="@string/reload_hint"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/address_list_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/baseline_add_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

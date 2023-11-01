@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/address_tile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/material_dynamic_primary90"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/addressTitle"
+            android:layout_width="wrap_content"
+            android:maxWidth="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@id/addressTitle"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            app:srcCompat="@drawable/baseline_delete_24"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/addressDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+</LinearLayout>

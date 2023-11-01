@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Location Pinned</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Location Pinned</string>
+    <string name="second_fragment_label">Add Location</string>
+    <string name="edit_label">Edit Location</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="search_hint">Search location...</string>
+    <string name="reload_hint">Reset Data</string>
+    <string name="location_hint">Save Location</string>
+    <string name="cancel_hint">Cancel</string>
+    <string name="lat_hint">Enter latitude</string>
+    <string name="long_hint">Enter longitude</string>
+    <string name="geocode_hint">Geocoded location:</string>
+    <string name="geocode_btn_hint">Generate Geocode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
